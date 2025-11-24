@@ -55,6 +55,19 @@ BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 
 TARGET_USES_QCOM_MM_AUDIO := true
 
+# Axion OS
+BYPASS_CHARGE_SUPPORTED := false
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := walt
+PERF_ANIM_OVERRIDE := false
+GPU_FREQS_PATH := /sys/devices/platform/28000000.mali/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/devices/platform/28000000.mali/hint_min_freq
+HBM_SUPPORTED := false
+HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
+TARGET_NEEDS_DOZE_FIX := false
+TARGET_USES_USLMK := false
+TARGET_IS_LOW_RAM := false
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := taro
 TARGET_NO_BOOTLOADER := true

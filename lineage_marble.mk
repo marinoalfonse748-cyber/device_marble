@@ -23,3 +23,22 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=marble_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# AxionOS AOSP Configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_EPPE := true
+TARGET_ENABLE_BLUR := false
+TARGET_INCLUDE_VIPERFX := false
+TARGET_INCLUDES_LOS_PREBUILTS := true
+WITH_GMS := true
+
+AXION_MAINTAINER := Hafidz_Muzakky
+
+# Processor name (use "_" for spaces)
+AXION_PROCESSOR := Snapdragon®_7+_Gen_2_(SM7475)
+
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 64,8,2
+
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 16
